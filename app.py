@@ -1,7 +1,7 @@
 import streamlit as st
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.chat_history import BaseChatMessageHistory
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
@@ -169,4 +169,5 @@ if user_input := st.chat_input("Ask your query:"):
 #    res = rag_chain.invoke({"input": user_input})
 
 #    st.markdown(f"**Answer:** {res['answer']}")
+
 
