@@ -1,5 +1,5 @@
 streamlit
-langchain
+langchain==0.0.350
 langchain_huggingface
 sentence-transformers
 python-dotenv
@@ -9,4 +9,5 @@ ipykernel
 langchain-groq
 langserve
 transformers
+
 pypdf
